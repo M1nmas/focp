@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COLLEGE OF ENGINEERING KARUNAGAPALLY</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: dimgrey;
+      color: #333;
+    }
+
+    header {
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      display: inline;
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+
+    .college-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .courses-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .course {
+      flex: 0 0 80%;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+    }
+
+    .course:hover {
+      transform: scale(1.02);
+    }
+
+    .course h2 {
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .course p {
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: black;  
+      color: white;
+    }
+
+    .footer a {
+      color: green;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Scrollbar styling */
+    .courses-container::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .courses-container::-webkit-scrollbar-thumb {
+      background: #003366;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="college logo.png" alt="College Logo">
+    <h1>COLLEGE OF ENGINEERING KARUNAGAPALLY</h1>
+  </header>
+
+  <img src="college.jpg" alt="College Campus" class="college-image">
+
+  <div class="courses-container">
+    <div class="course">
+      <h2>Bachelor of technology</h2>
+      <p>Duration: 4 Years</p>
+      <p>Seats Available: 300</p>
+    </div>
+    <div class="course">
+      <h2>Computer science and engineering(CSE)</h2>
+      <p>Duration: 4 Year</p>
+      <p>Seats Available: 120</p>
+    </div>
+    <div class="course">
+      <h2>Electrical engineering(EE)</h2>
+      <p>Duration: 4 Years</p>
+      <p>Seats Available: 30</p>
+    </div>
+    <div class="course">
+      <h2>Mechanical engineering (ME)</h2>
+      <p>Duration: 4 Years</p>
+      <p>Seats Available: 30</p>
+    </div>
+    <div class="course">
+      <h2>Electronics and communications engineering</h2></h2>
+      <p>Duration: 4 Years</p>
+      <p>Seats Available: 30</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    Visit our website: <a href="https://www.ceknpy.ac.in/" target="_blank">official college website</a></a>
+  </div>
+
+</body>
+</html>
